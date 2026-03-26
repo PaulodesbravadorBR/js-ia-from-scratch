@@ -1,8 +1,8 @@
 function funcaoSoma(arr = []) {
     return arr.reduce((a, b) => a + b);
-} // ← chave fechando a função (estava faltando)
+} 
 
-function gradientDescent(n = 0) { // ← espaço adicionado
+function gradientDescent(n = 0) { 
     return n * (1 - n);
 }
 
@@ -23,7 +23,7 @@ function relu(n = 0) {
 }
 
 function leakyRelu(n = 0) {
-    return n >= 0 ? n : 0.01 * n; // ← lógica corrigida
+    return n >= 0 ? n : 0.01 * n; 
 }
 
 function feedForward(entradas = [], objetivo = 0, epocas = 1, ativacao = 'sigmoid') {
